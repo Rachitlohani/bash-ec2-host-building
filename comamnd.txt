@@ -1,0 +1,4 @@
+
+###command used to bring up an instance with the right size and required specification. 
+
+ ec2-run-instances ami-bba18dd2 -n 2 -k cdh-keypair -g sg-322c8c57 -f user_defined.sh --instance-type m1.large   -b "/dev/sdb=:500" -b "/dev/sdc=:500" --subnet subnet-741f4f5c --associate-public-ip-address true
